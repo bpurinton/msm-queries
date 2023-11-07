@@ -1,8 +1,6 @@
 image: jelaniwoods/appdev2023-rails-template
 
 tasks:
-  - env:
-      DATABASE_URL: "postgresql://gitpod@localhost"
   - before: |
       sudo cp -r /home/student /home/gitpod
       (cd /home/gitpod/student; sudo find . -maxdepth 1 -exec mv {} .. \;)
@@ -31,3 +29,4 @@ vscode:
     - mbessey.vscode-rufo
     - aliariff.vscode-erb-beautify
     - eamodio.gitlens
+    - setobiralo.erb-commenter
